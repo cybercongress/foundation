@@ -1,7 +1,7 @@
 # euler\~Foundation Aragon Ceremony
 
 ## TL;DR
-The guide will walk you through the setup process of an Aragon-based DAO, by an existing Aragon DAO, using the setup process of (the testing version of) cyber\~Foundation, the community governing DAO behind [cyber](https://cyber.page/). As a result, you will setup a community-governed DAO, that can distribute shares to its holders via the use of 2 apps, the cyber~Vesting and the cyber~Auction app. The euler~Foundation DAO also has a third app, cyber\~Evangelism, for project ambassadors. 
+The guide will walk you through the setup process of an Aragon-based DAO, by an existing Aragon DAO, using the setup process of (the testing version of) cyber\~Foundation, the community governing DAO behind [cyber](https://cyber.page/). As a result, you will setup a community-governed DAO, that can distribute shares to its holders via the use of 2 apps, the cyber\~Vesting and the cyber\~Auction app. The euler\~Foundation DAO also has a third app, cyber\~Evangelism, for project ambassadors. 
 
 ### Content
 - [Introduction](https://github.com/cyber-foundation/tree/master/euler-foundation/euler-foundation.md#introduction)
