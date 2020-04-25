@@ -5,9 +5,9 @@ The purpose of this repository is to document and share the ongoing work around 
 
 ### Become a believer
 - [euler~Foundation setup ceremony](https://github.com/cybercongress/cyber-foundation/blob/master/euler-foundation/foundation.md)
-- [White Paper](https://ipfs.io/ipfs/QmceNpj6HfS81PcCaQXrFMQf7LR5FTLkdG9sbSRNy3UXoZ)
+- [White Paper](https://ipfs.io/ipfs/QmPjbx76LycfzSSWMcnni6YVvV3UNhTrYzyPMuiA9UQM3x)
 - [Homestead doc](https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md)
-- [OBEP program for cyber evangelists](https://github.com/cybercongress/congress/blob/master/ecosystem/donations/obep.md)
+- [OBEP program for cyber evangelists](https://github.com/cybercongress/cyber-foundation/blob/master/evangelism/obep.md)
 - [Game of Links](https://cybercongress.ai/game-of-links/)
 - [cyber~Blog](https://cybercongress.ai/post)
 
