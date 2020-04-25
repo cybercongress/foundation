@@ -17,7 +17,7 @@ The purpose of this repository is to document and share the ongoing work around 
 
 ### [euler~Foundation](https://mainnet.aragon.org/#/eulerfoundation)
 An Aragon-bred, semi-sacred entity that lives on the Ethereum mainnet. It consists of 3 apps:
-- cyber~Evangelism: The app for real believers and project evangelists. Get [perks](https://mainnet.aragon.org/#/eulerfoundation/0xfc3849b9711f69ddb677facff0cd6755a981a1f0/) or read about it [here](https://github.com/cybercongress/aragon-evangelism-app/blob/master/README.md)
+- cyber~Evangelism: The app for real believers and project evangelists. Get [perks](https://cyber.page/evangelism) or read about it [here](https://github.com/cybercongress/aragon-evangelism-app/blob/master/README.md)
 - cyber~Vesting: The app for vesting your hard-earned GOL for EUL tokens. Read more [here](https://github.com/cybercongress/aragon-vesting-app/blob/master/README.md)
 - cyber~Auction: The app for getting your GOL tokens and testing the auction. Read more [here](https://github.com/cybercongress/aragon-auction-app/blob/master/README.md)
 
