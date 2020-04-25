@@ -1,8 +1,8 @@
-Evangelism app for Cyber Foundation
+# Evangelism app for cyber~Foundation
 
 Become an evangelist if you a real believer. Get [perks](https://cyber.page/evangelism) or read about it [here](https://github.com/cybercongress/cyber-foundation/blob/master/evangelism/obep.md).
 
-## About the app
+### About the app
 This is an Aragon based app for cyber\~Foundation:
 
 - [The Code of the app](https://github.com/cybercongress/aragon-evangelism-app)
