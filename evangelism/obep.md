@@ -3,7 +3,7 @@ As stated in [the whitepaper](https://ipfs.io/ipfs/QmPjbx76LycfzSSWMcnni6YVvV3UN
 
 The current state of the blockchain industry is twofold. The good part is that so much innovation is happening as we speak. The bad part is that a large chunk of these innovations, especially post-hype, are reliably covered by a thick layer of shitty projects. This means that we have to find our way to break through this thick layer of shit. We believe that we have the most important flavouring, which is a [working network](https://cyber.page/brain) and [a basic application](https://cyber.page). However, since our appetiser consists of user-generated ingredients, to move forward with the idea of a greater, decentralized search, we need *more engagement*. But how do we get people to know about us?
 
-Without much ado, we want to announce the Open Bootstrap Evangelism Program or OBEP. Acknowledged Evangelists will be eligible to 10% of all donations in ATOMs, which they have generated during [the Game of Links](https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#game-of-links-or-gol), [Game of Thrones](https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#game-of-thrones-or-got) and other perks.
+Without much ado, we want to announce the Open Bootstrap Evangelism Program or OBEP. Acknowledged Evangelists will be eligible to 10% of all donations in ATOMs, which they have generated during [the Game of Links](https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#game-of-links-or-gol) and other perks.
 
 ## Perks
 - Rewards in ATOM
