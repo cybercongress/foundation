@@ -1747,7 +1747,7 @@ The supply is transferred to the Auction in the Foundation DAO:
 
 The distribution of the Foundations is now completed and the Auction has the supply for the required distribution. 
 
-The Congress team, the initial donors and the inventors of Cyber may participate in the governance of the Foundation with the proportion of tokens which they have, following the numbers outlined in [Cybers whitepaper](https://ipfs.io/ipfs/QmceNpj6HfS81PcCaQXrFMQf7LR5FTLkdG9sbSRNy3UXoZ).
+The Congress team, the initial donors and the inventors of Cyber may participate in the governance of the Foundation with the proportion of tokens which they have, following the numbers outlined in [Cybers whitepaper](https://ipfs.io/ipfs/QmQ1Vong13MDNxixDyUdjniqqEj8sjuNEBYMyhQU4gQgq3).
 
 #### Load the Auction
 The last step of the Auction setup. The supply has been already transferred and we may load the Auction with a given amount of Auction tokens, to be distributed during round zero (ETH part of Game of Thrones). There will be 200 (tera) TGOL24 allocated to that part of the auction. The remaining amount will be equally split between other rounds (20 rounds of 23 hours + 1 sec).
