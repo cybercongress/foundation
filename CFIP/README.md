@@ -7,7 +7,7 @@ Anyone is welcome and highly encouraged to contribute and submit ideas or partic
 
 Once your CFIP has been published, do not hesitate to share the link in the ecosystem to kickstart discussions. 
 
-# Contributing
+## Contributing
 
 1. Review the existing CFIPs. 
 2. Open an issue with the following format: 
@@ -22,3 +22,12 @@ Abstract:
 Motivation:
 Reference implementation: 
 ````
+
+## Contributions for the euler\~Foundation competition
+
+Simply follow the above format of submititng CFIP issues with the following changes:
+
+```
+Title: Economics design competetion
+```
+
