@@ -24,3 +24,5 @@ An Aragon-bred, semi-sacred entity that lives on the Ethereum mainnet. It consis
 ### GoL and Governance
 - Define the future by playing the Game of Links via [cyber.page](https://cyber.page/gol)
 - Participate in governance and earn rewards from the community pool. Explore [the brain](https://cyber.page/brain)
+
+#fuckgoogle
