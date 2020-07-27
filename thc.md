@@ -2,7 +2,7 @@ THC: Unit of account for digital goods
 
 @xhipster and @litvintech
 
-4900K
+4800K
 
 Trustless ETH derevative with elastic supply protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. 
 
@@ -37,8 +37,11 @@ RebaseRatio = (Average price - Target price) / 73
 At the start the system relies solely on the Uniswap v2 price oracle. Rebase call requre incentive for execution. Everybody can be a caller. The caller get 2x of the gas spent of the call in THC to ensure that rebase will be executed with high pripority.
 
 UX:
+
 Next rebase in <amount of blocks>
+
 Last reward: 0.3 GTHC
+
 => Rebase
 
 ## Sun
@@ -61,15 +64,30 @@ THC price =
 
 Every rebase the price of the bonding curve is adjusted.
 
+UX:
+
+Amount of THC, OIL and ETH in cyberFoundation
+
+Price chart of the bonding curve
+
+=> Buy THC from cyberFoundation
+
 ## Liquid River
 
 THC holders defines how much liquidity incentives THC needs. They do it buy staking THC on LiquidityRatio - amount of tokens substructed from the Mountatin of Force every rebase: 
 
 LiquidityRatio = SUM (Amount of staked tokens * Liquidity ration) / staked tokens
 
-Liquidity reward is split evently between stakers and liquidity providers. The idea is the following: the more LiquidityRatio is set by the consensus - the less percent of Liquidity rewards recieved by stakers. Doing so we ensure that stakeholders will tend to the equilibrium ration which will optimally incentiveze liquidity.
+Liquidity reward is split between stakers and liquidity providers. The idea is the following: the more LiquidityRatio is set by the consensus - the less percent of Liquidity rewards is being recieved by stakers. Doing so we ensure that stakeholders will tend to the equilibrium ratio which will optimally incentiveze liquidity.
 
 Staker rewards = 
+
+UX:
+
+Share in the pool
+Liquidity rewards
+
+=> Add / Remove liquidity
 
 ## Deep sea
 
@@ -86,9 +104,15 @@ List of elastics sorted by cap with the following collumns
 - turnover
 - cap
 
-=> click on the line: buy or sell
-=> create
+=> click on the line: Buy or Sell
+=> Create elastic
 
 ## Oil
 
-Oil helps store and transfer gas. The only difference between avaregae elastic is that there exist special price oracle which incentivize calls in order to determine gas price for rebase.
+Oil helps store and transfer gas. The only difference between avarage elastic is that there exist special price oracle which incentivize calls in order to determine gas price for rebase.
+
+UX:
+
+OIL price chart (target/actual)
+
+=> Report price
