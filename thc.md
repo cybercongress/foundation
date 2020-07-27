@@ -2,7 +2,7 @@ THC: Unit of account for digital goods
 
 @xhipster and @litvintech
 
-5000K
+4900K
 
 Trustless ETH derevative with elastic supply protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. 
 
@@ -15,11 +15,17 @@ Genesis supply is 1 000 000 000 000 000 THC or 1M GTHC. THC is undivisible. At G
 - 80% Mountain of Force
 
 UX:
+
 How long will they suck you? 
+
 => Fuck them
+
 Picture: Forest, river, mountain, sea, oil, sun
+
 Price * Balance = Total
+
 Chart supply with price
+
 => [amount] GTHC Buy
 
 ## Rebase
@@ -37,7 +43,11 @@ Last reward: 0.3 GTHC
 
 ## Sun
 
-Swap and send. One convinient dialog for swapping and sending tokens.
+The same as Uniswap swap dialog. 
+
+Returns gas payed for tx. Tx fees are set by governance, split between burn and cyberFoundation, burn rate is set by governance, 
+
+=> Swap (Send)
 
 ## Magic Forest
 
@@ -45,19 +55,29 @@ Swap and send. One convinient dialog for swapping and sending tokens.
 
 ## Mountatin of Force
 
-80% of Genesis supply is under control of cyberFoundation but is fully available through the bonding curve. The price of the curve is also adjusted.
+80% of Genesis supply is under control of cyberFoundation but is fully available through the bonding curve.
+
+THC price = 
+
+Every rebase the price of the bonding curve is adjusted.
 
 ## Liquid River
 
-THC holders defines how much liquidity incentives THC needs. They do it buy staking THC.
+THC holders defines how much liquidity incentives THC needs. They do it buy staking THC on LiquidityRatio - amount of tokens substructed from the Mountatin of Force every rebase: 
 
-Emission is defined but distriubtion can be changed based on governance decisions as it is nearly impossible to predict the protocol for the liquidity source this is the only distribution aspect that can be adjusted by the governance mechanism. At Genesis the only price oracle is uniswap.
+LiquidityRatio = SUM (Amount of staked tokens * Liquidity ration) / staked tokens
+
+Liquidity reward is split evently between stakers and liquidity providers. The idea is the following: the more LiquidityRatio is set by the consensus - the less percent of Liquidity rewards recieved by stakers. Doing so we ensure that stakeholders will tend to the equilibrium ration which will optimally incentiveze liquidity.
+
+Staker rewards = 
 
 ## Deep sea
 
-Considering that the same mechanics can be applied to any fungible token we distinct them as a new asset class called "elastic". We created a factory which allow to deploy them easily. We ref them elastics. 
+Considering that the same mechanics can be applied to any fungible token we distinct them as a new asset class called "elastic". We created a factory which allow to deploy them easily.
 
-Factory for deploying: param: percent for self
+Factory for deploying: params: percent for self, contract for self, base token contract
+
+UX:
 
 List of elastics sorted by cap with the following collumns 
 - price
@@ -66,9 +86,9 @@ List of elastics sorted by cap with the following collumns
 - turnover
 - cap
 
-Action bar: click on the line 
+=> click on the line: buy or sell
+=> create
 
 ## Oil
 
-Oil helps store and transfer gas.
-set by governance, split between burn and cyberFoundation, burn rate is set by governance, returns gas payed for tx)
+Oil helps store and transfer gas. The only difference between avaregae elastic is that there exist special price oracle which incentivize calls in order to determine gas price for rebase.
