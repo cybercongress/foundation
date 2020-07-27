@@ -20,7 +20,7 @@ How long will they suck you?
 
 => Fuck them
 
-Picture: Forest, river, mountain, sea, oil, sun
+Picture: mountain, forest, river, beach, sun, well, sea.
 
 Price * Balance = Total
 
@@ -78,10 +78,6 @@ THC holders defines how much liquidity incentives THC needs. They do it buy stak
 
 LiquidityRatio = SUM (Amount of staked tokens * Liquidity ration) / staked tokens
 
-Liquidity reward is split between stakers and liquidity providers. The idea is the following: the more LiquidityRatio is set by the consensus - the less percent of Liquidity rewards is being recieved by stakers. Doing so we ensure that stakeholders will tend to the equilibrium ratio which will optimally incentiveze liquidity.
-
-Staker rewards = 
-
 UX:
 
 Share in the pool
@@ -89,9 +85,17 @@ Liquidity rewards
 
 => Add / Remove liquidity
 
-## Deep sea
+## Staking Beach
 
-Considering that the same mechanics can be applied to any fungible token we distinct them as a new asset class called "elastic". We created a factory which allow to deploy them easily.
+Liquidity reward is split between stakers and liquidity providers. The idea is the following: the more LiquidityRatio is set by the consensus - the less percent of Liquidity rewards is being recieved by stakers. Doing so we ensure that stakeholders will tend to the equilibrium ratio which will optimally incentiveze liquidity.
+
+Staker rewards = 
+
+=> Stake / Unstake on LiquidityRatio
+
+## Deep Sea
+
+Considering that the same mechanics can be applied to any fungible token we distinct them as a new asset class called "elastic". We created a factory which allow to deploy them easily. 
 
 Factory for deploying: params: percent for self, contract for self, base token contract
 
@@ -107,9 +111,9 @@ List of elastics sorted by cap with the following collumns
 => click on the line: Buy or Sell
 => Create elastic
 
-## Oil
+## Oil well
 
-Oil helps store and transfer gas. The only difference between avarage elastic is that there exist special price oracle which incentivize calls in order to determine gas price for rebase.
+Oil is extracted from oil well. Oil helps store and transfer gas. The only difference between avarage elastic is that there exist special price oracle which incentivize calls in order to determine gas price for rebase.
 
 UX:
 
