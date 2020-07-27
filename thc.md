@@ -54,7 +54,9 @@ Returns gas payed for tx. Tx fees are set by governance, split between burn and 
 
 ## Magic Forest
 
-20% of Genesis supply is lost in the Magic Forest.
+20% of Genesis supply is absorbed in the Magic Forest. Great Web needs them. Magic forest will also help create cyber creatutres (cyber protocol deployments into different consensus architectures and computers). This deployments will be available exclusivly to THC holders.
+
+=> Subscribe to cyberCongress feed
 
 ## Mountatin of Force
 
