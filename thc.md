@@ -20,6 +20,9 @@ How long will they suck you?
 
 => Fuck them
 
+![photo_2020-07-28 13 28 07](https://user-images.githubusercontent.com/410789/88660061-5708e180-d0d6-11ea-8cb9-210f9cdbb6e9.jpeg)
+
+
 Picture: mountain, forest, river, beach, sun, well, sea.
 
 Price * Balance = Total
