@@ -47,14 +47,6 @@ Last reward: 0.3 GTHC
 
 => Rebase
 
-## Sun
-
-The same as Uniswap swap dialog. 
-
-Returns gas payed for tx. Tx fees are set by governance, split between burn and cyberFoundation, burn rate is set by governance, 
-
-=> Swap (Send)
-
 ## Magic Forest
 
 20% of Genesis supply is absorbed in the Magic Forest. Great Web needs them. Magic forest will also help create cyber creatutres (cyber protocol deployments into different consensus architectures and computers). This deployments will be available exclusivly to THC holders.
@@ -125,3 +117,11 @@ UX:
 OIL price chart (target/actual)
 
 => Report price
+
+## Sun
+
+The same as Uniswap swap dialog. 
+
+Returns eth spent for gas. Tx fees are set by governance, split between burn and cyberFoundation, burn rate is set by governance, 
+
+=> Swap (Send)
