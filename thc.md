@@ -1,29 +1,49 @@
-# Elastic: Defi primitive with supply feedback 
+# Elastic: Trustless defi primitive with supply feedback 
 @xhipster
 4700K
 
-Simple contract fabric would allow anybody create trustless derevatives with elastic supply based on uniswap price feed. Simplicity of construction eleminates expensive governance process and any possible single point of failure. Applications are numerous. One of such application is unit of account for digital goods: ETH derevative which protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. Another application is digital oil: gas derevative which allow to hedge against gas price fluctiations while capturing value of increased usage of the tool. Of course it also could be used to create elastic derevatives based on unstable collapsing fiat unit of account. In this paper we outline implementation ratiaonale and incentive details behind the implementation of the fabric.
+Simple contract fabric would allow anybody create trustless derevatives with elastic supply based on uniswap price feed. Simplicity of construction eleminates expensive governance process and any possible single point of failure. Applications are numerous. One of such application is unit of account for digital goods: THC - ETH derevative which protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. Another application is digital OIL: gas derevative which allows hedge against gas price fluctiations while capturing value of increased usage of the tool. Of course it also could be used to create elastic derevatives based on unstable collapsing fiat unit of account. In this paper we outline implementation ratiaonale and incentive details behind the implementation of the fabric.
 
 ## Introduction
 
 Recent real market experiments such as AMPL shows that an idea of the mechanism in which supply is adjusted based on target price can be viable. It can be used for not only for tracking dollar value. But mentioned project lacks essential properties reqired for defi:
-- conract must not be ownable
+- contract must not be ownable
 - price feeds have to be bulletproof
 - initial distribution have to be more open
 - the concept can be generalized
 - liquidity incentive have to be embedded
-- rebased incentives have to be in place
-- extended value extraction for agents can be applied
+- rebase incentives have to be in place
+- value extraction for agents can be extended 
 
 This facts create opportunity for more open and resilient tool.
+
+## Nitro
+
+First aff all we want to discuss key feature which differentiate elastic from ERC-20 token. It has additional method which will recompute balances 
+
+Supply function depends on the average price. Target price of 1 GTHC is 1 ETH. Every 1000 blocks balances are adjusted using RebaseRatio according to the price oracle set by a consensus of cyberFoundation:
+
+RebaseRatio = (Average price - Target price) / 73
+
+At the start the system relies solely on the Uniswap v2 price oracle. Rebase call requre incentive for execution. Everybody can be a caller. The caller get 2x of the gas spent of the call in THC to ensure that rebase will be executed with high pripority.
+
+UX:
+
+Next rebase in <amount of blocks>
+
+Last reward: 0.3 GTHC
+
+=> Rebase
 
 ## THC
 
 Dollar denominated tokens often reffered as stable coins can help transition from fiat economy to cyber economy but they lack one important property which is necessary for pricing of digital goods: profitability in ETH. The reason is simple: nearly all Ethereum based utility tokens valuated in ETH beacuse ETH is necesssary to pay for gas. Hence, setting prices in USD, DAI and other shit will result in a drain of value and will lead to non-sustainable nature of such projects. Pricing in ETH will solve part of the issue. But inability to produce more ETH while holding it open opportunity for derevatives which can. Recent advancement in the theory of money hypothesis that currencies with elastic supply are more suted for day to day commerce due to ability to absorb demand smoother. So, we introduce such a tool.
 
-Genesis supply is 1 000 000 000 000 000 THC or 1M GTHC. THC is undivisible. At Genesis the picture is the following:
+Genesis supply is 100 THC
 - 20% Magic Forest
 - 80% Mountain of Force
+
+THC itself will work as governance token 
 
 UX:
 
@@ -42,21 +62,7 @@ Chart supply with price
 
 => [amount] GTHC Buy
 
-## Nitro
 
-Supply function depends on the average price. Target price of 1 GTHC is 1 ETH. Every 1000 blocks balances are adjusted using RebaseRatio according to the price oracle set by a consensus of cyberFoundation:
-
-RebaseRatio = (Average price - Target price) / 73
-
-At the start the system relies solely on the Uniswap v2 price oracle. Rebase call requre incentive for execution. Everybody can be a caller. The caller get 2x of the gas spent of the call in THC to ensure that rebase will be executed with high pripority.
-
-UX:
-
-Next rebase in <amount of blocks>
-
-Last reward: 0.3 GTHC
-
-=> Rebase
 
 ## Magic Forest
 
