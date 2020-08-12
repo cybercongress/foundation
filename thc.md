@@ -4,7 +4,20 @@
 
 Simple contract fabric would allow anybody create trustless derevatives with elastic supply based on uniswap price feed. Simplicity of construction eleminates expensive governance process and any possible single point of failure. Applications are numerous. One of such application is unit of account for digital goods: ETH derevative which protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. Another application is digital oil: gas derevative which allow to hedge against gas price fluctiations while capturing value of increased usage of the tool. Of course it also could be used to create elastic derevatives based on unstable collapsing fiat unit of account. In this paper we outline implementation ratiaonale and incentive details behind the implementation of the fabric.
 
-## Init
+## Introduction
+
+Recent real market experiments such as AMPL shows that an idea of the mechanism in which supply is adjusted based on target price can be viable. It can be used for not only for tracking dollar value. But mentioned project lacks essential properties reqired for defi:
+- conract must not be ownable
+- price feeds have to be bulletproof
+- initial distribution have to be more open
+- the concept can be generalized
+- liquidity incentive have to be embedded
+- rebased incentives have to be in place
+- extended value extraction for agents can be applied
+
+This facts create opportunity for more open and resilient tool.
+
+## THC
 
 Dollar denominated tokens often reffered as stable coins can help transition from fiat economy to cyber economy but they lack one important property which is necessary for pricing of digital goods: profitability in ETH. The reason is simple: nearly all Ethereum based utility tokens valuated in ETH beacuse ETH is necesssary to pay for gas. Hence, setting prices in USD, DAI and other shit will result in a drain of value and will lead to non-sustainable nature of such projects. Pricing in ETH will solve part of the issue. But inability to produce more ETH while holding it open opportunity for derevatives which can. Recent advancement in the theory of money hypothesis that currencies with elastic supply are more suted for day to day commerce due to ability to absorb demand smoother. So, we introduce such a tool.
 
