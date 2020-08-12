@@ -1,10 +1,8 @@
-THC: Unit of account for digital goods
+# Elastic: Defi primitive with supply feedback 
+@xhipster
+4700K
 
-@xhipster and @litvintech
-
-4800K
-
-Trustless ETH derevative with elastic supply protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. 
+Simple contract fabric would allow anybody create trustless derevatives with elastic supply based on uniswap price feed. Simplicity of construction eleminates expensive governance process and any possible single point of failure. Applications are numerous. One of such application is unit of account for digital goods: ETH derevative which protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. Another application is digital oil: gas derevative which allow to hedge against gas price fluctiations while capturing value of increased usage of the tool. Of course it also could be used to create elastic derevatives based on unstable collapsing fiat unit of account. In this paper we outline implementation ratiaonale and incentive details behind the implementation of the fabric.
 
 ## Init
 
@@ -31,7 +29,7 @@ Chart supply with price
 
 => [amount] GTHC Buy
 
-## Rebase
+## Nitro
 
 Supply function depends on the average price. Target price of 1 GTHC is 1 ETH. Every 1000 blocks balances are adjusted using RebaseRatio according to the price oracle set by a consensus of cyberFoundation:
 
