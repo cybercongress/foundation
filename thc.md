@@ -1,144 +1,103 @@
-# Elastic: Trustless defi primitive with supply feedback 
-@xhipster
-4700K
 
-Simple contract fabric would allow anybody create trustless derevatives with elastic supply based on uniswap price feed. Simplicity of construction eleminates expensive governance process and any possible single point of failure. Applications are numerous. One of such application is unit of account for digital goods: THC - ETH derevative which protects consumers and suppliers from collapsing fiat economy while enable profiting from demand increase of accounting unit in which they set prices. Another application is digital OIL: gas derevative which allows hedge against gas price fluctiations while capturing value of increased usage of the tool. Of course it also could be used to create elastic derevatives based on unstable collapsing fiat unit of account. In this paper we outline implementation ratiaonale and incentive details behind the implementation of the fabric.
+# THC: Unit of account for digital goods
+@xhipster
+4000K
+
+THC protects consumers and suppliers from collapsing fiat economy while allowing sellers profit from demand increase of accounting unit in which they set prices and enabling buyers to save on gas costs.
 
 ## Introduction
 
-Recent real market experiments such as AMPL shows that an idea of the mechanism in which supply is adjusted based on target price can be viable. It can be used for not only for tracking dollar value. But mentioned project lacks essential properties reqired for defi:
-- contract must not be ownable
-- price feeds have to be bulletproof
-- initial distribution have to be more open
-- the concept can be generalized
-- liquidity incentive have to be embedded
-- rebase incentives have to be in place
-- value extraction for agents can be extended 
+First of all lets get down to what is a good unit of account is.
+In our opinion good unit of account have to reach optimal balance between store of value while remaining liquid enough to become medium of exchange.
 
-This facts create opportunity for more open and resilient tool.
+The token tend to become a unit in which agents measure profits if it is steadily growing. This property is necessary because all else being equal agent will store value in the fastest growing token. But agent will choose only from the most liquid ones. E.g. if you analyse the most popular fiat tokens you will find out that only some of them such as CHF, JPY, SGD and GBP were able to outperform dollar in last 20+ years. The other were stagnating in comparison. Nevertheless, the planet continued to think in USD because it was the most liquid out of the most performant. However, nothing stops us from assuming that both properties are possible indeed.
 
-## Nitro
+USD denominated ERC-20 tokens often referred as stable coins can help transition from fiat economy to cyber economy but they lack one important property which is necessary for pricing of digital goods: profitability in ETH. The reason is simple: nearly all Ethereum based utility tokens valuated in ETH because ETH was primary investment unit and it is necessary to pay for gas. Hence, setting prices in USD, DAI and other shit will result in a drain of value and will lead to non-sustainable nature of such projects. Pricing in ETH will solve part of the issue. But inability to produce more ETH while holding it open opportunity for derivatives which can. Recent advancement in the theory of money hypothesis that currencies with elastic supply are more suited for day to day commerce due to ability to absorb demand smoother. So, we introduce such a tool which is a good store of value also. It can effectively capture value of the best performing tokens based on investment byproducts which we refer to as gTokens. gTokens works as a basis for THC sustainability, liquidity and profitability.
 
-First aff all we want to discuss key feature which differentiate elastic from ERC-20 token. It has additional method which will recompute balances 
+## gToken
 
-Supply function depends on the average price. Target price of 1 GTHC is 1 ETH. Every 1000 blocks balances are adjusted using RebaseRatio according to the price oracle set by a consensus of cyberFoundation:
+gToken (g - growing) is an investment token which maximise profitability and reduce risks. Longterm investment increase profitability. gTokens represent liquidity pool managed by THC consensus. Allow holder to generate steady cashflow in THC while keeping profitability in ETH.
 
-RebaseRatio = (Average price - Target price) / 73
+gTokens can be created by Add and remove token
 
-At the start the system relies solely on the Uniswap v2 price oracle. Rebase call requre incentive for execution. Everybody can be a caller. The caller get 2x of the gas spent of the call in THC to ensure that rebase will be executed with high pripority.
+Deposit. Каждый может поставить дереватив токена (dASSET). Чем дефицитнее поставлен dASSET, тем дешевле фи на ввод. Чем больше депозита тем выше фи. Чем выше фи, тем меньшая доля часть уходит рефералу. Стейкинг THC дает буст реферальных наград.
 
-UX:
+Stake. Stake gETH for amount of days you want and get more THC rewards.
 
-Next rebase in <amount of blocks>
+Exchange. Чем выше относительные обороты, тем выше фи.
 
-Last reward: 0.3 GTHC
+Transfer. Трансфер gETH облагается налогом. Цель налога - добавить инцентив на расчеты в THC. Чем выше оборачиваемость - тем выше налоговая ставка.  
 
-=> Rebase
+Redeem. Чем дефицитнее выведен dETH, тем выше фи на вывод
+
+Add and remove allowed method
 
 ## THC
 
-Dollar denominated tokens often reffered as stable coins can help transition from fiat economy to cyber economy but they lack one important property which is necessary for pricing of digital goods: profitability in ETH. The reason is simple: nearly all Ethereum based utility tokens valuated in ETH beacuse ETH is necesssary to pay for gas. Hence, setting prices in USD, DAI and other shit will result in a drain of value and will lead to non-sustainable nature of such projects. Pricing in ETH will solve part of the issue. But inability to produce more ETH while holding it open opportunity for derevatives which can. Recent advancement in the theory of money hypothesis that currencies with elastic supply are more suted for day to day commerce due to ability to absorb demand smoother. So, we introduce such a tool.
+Расчетный токен. Расчеты в THC выгодны так как генерируют дополнительный доход и тем, кто устанавливает в THC цены и тем кто рассчитываются в нем. В механизм токена встроены следующие механизмы
+- инцентив тем, кто получает его
+- субсидия на газ тем, кто его перечисляет
+- эластичного перераспределения повышенного спрос на THC его держателям. Цена THC стремится к стоимости индекса dASSET взвешенного на ( ? ликвидность, сумму активов, оборачиваемость)
 
-Genesis supply is 100 THC
-- 20% Magic Forest
-- 80% Mountain of Force
+Mint. Volume of minting is defined by revenue: deposit, redeem and transfer fees.
 
-THC itself will work as governance token 
+Transfer. Имплементирован таким образом, чтобы эфир был не нужен. Газ субсидируется! Цель - сделать трансфер THC дешевле чем трансфер эфира. Получатель токена получает дополнительный доход.
 
-UX:
+Stake. Чем больше застейкано - тем пиже все:
+- выше награды с ликвидности
+- дешевле торговые комиссии
+- выше бонус при получении
+- больше субсидия при отправке
+- больше награда реферала
+- выше сила голоса
 
-How long will they suck you? 
+Get rewards. Минтится тем кто держит ликвидность с учетом модификаторов.
 
-=> Fuck them
+Burn. Чем больше выручка - тем больше сжигается
 
-![photo_2020-07-28 13 28 07](https://user-images.githubusercontent.com/410789/88660061-5708e180-d0d6-11ea-8cb9-210f9cdbb6e9.jpeg)
+Using any token as unit of account extend value over intrinsic properties. So we introduce nitro method which rebase balances if market price is not around the target price which is compound index of all gAssets weighted on their valuation. Key purpose of rebased  is redistribution of excess value to THC holders created by the use of THC as an accounting unit. Rebase happens every hour:
 
+1. Коэффициент вычислить
+2. Дернуть методы из вайтлиста
+2. Вывести доход и конвертнуть его в THC
+3. Допечатать THC в базу
+4. Перевычислить стратегию (целевую структуру портфеля)
+5. Пересчитать размер субсидии
 
-Picture: mountain, forest, river, beach, sun, well, sea.
+(?) Чем ближе THC к пегу, тем больше наград
 
-Price * Balance = Total
+## Highlands
 
-Chart supply with price
+The biggest task is to create a product with ETH profitability
 
-=> [amount] GTHC Buy
+- WETH
+- cETH
+- aETH
+- bETH
+- rETH
+- sETH
 
+## Deep lake
 
+In order THC become value of exchange it needs good external liquidity:
 
-## Magic Forest
-
-20% of Genesis supply is absorbed in the Magic Forest. Great Web needs them. Magic forest will also help create cyber creatutres (cyber protocol deployments into different consensus architectures and computers). This deployments will be available exclusivly to THC holders.
-
-=> Subscribe to cyberCongress feed
-
-## Mountatin of Force
-
-80% of Genesis supply is under control of cyberFoundation but is fully available through the bonding curve.
-
-THC price = 
-
-Every rebase the price of the bonding curve is adjusted.
-
-UX:
-
-Amount of THC, OIL and ETH in cyberFoundation
-
-Price chart of the bonding curve
-
-=> Buy THC from cyberFoundation
-
-## Liquid River
-
-THC holders defines how much liquidity incentives THC needs. They do it buy staking THC on LiquidityRatio - amount of tokens substructed from the Mountatin of Force every rebase: 
-
-LiquidityRatio = SUM (Amount of staked tokens * Liquidity ration) / staked tokens
-
-UX:
-
-Share in the pool
-Liquidity rewards
-
-=> Add / Remove liquidity
-
-## Staking Beach
-
-Liquidity reward is split between stakers and liquidity providers. The idea is the following: the more LiquidityRatio is set by the consensus - the less percent of Liquidity rewards is being recieved by stakers. Doing so we ensure that stakeholders will tend to the equilibrium ratio which will optimally incentiveze liquidity.
-
-Staker rewards = 
-
-=> Stake / Unstake on LiquidityRatio
-
-## Deep Sea
-
-Considering that the same mechanics can be applied to any fungible token we distinct them as a new asset class called "elastic". We created a factory which allow to deploy them easily. 
-
-Factory for deploying: params: percent for self, contract for self, base token contract
-
-UX:
-
-List of elastics sorted by cap with the following collumns 
-- price
-- supply
-- liquidity
-- turnover
-- cap
-
-=> click on the line: Buy or Sell
-=> Create elastic
+- WETH/THC Uniswap
+- WETH/THC Sushuswap
+- WETH/THC Moonyswap
+- WETH/THC Balancer
+- WETH/THC Dodo
 
 ## Oil well
 
-Oil is extracted from oil well. Oil helps store and transfer gas. The only difference between avarage elastic is that there exist special price oracle which incentivize calls in order to determine gas price for rebase.
+Creation of gas based investment product is necessary to hedge against high gas prices.
 
-UX:
+- CHI
+- GST2
 
-OIL price chart (target/actual)
+## Mountain of Force
 
-=> Report price
+80% of minted THC supply is under control of cyber~Foundation
 
-## Sun
+## Magic Forest
 
-The same as Uniswap swap dialog. 
-
-Returns eth spent for gas. Tx fees are set by governance, split between burn and cyberFoundation, burn rate is set by governance, 
-
-=> Swap (Send)
+20% of minted THC supply is absorbed by the Magic Forest. Great Web needs them. Magic forest will also help create cyber creatures (cyber protocol deployments into different consensus architectures and computers). This deployments will be available exclusively to THC stakers.
