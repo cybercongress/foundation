@@ -1,30 +1,34 @@
 ## The current OBEP rewards (suggestions are welcome)
 
-ATOM referral rewards are automatically calculated and have nothing to do with the community pool. This table outlines the current breakdown of the 1TCYB allocated to the community pool from the OBEP program. It is not final and if your name is here, it does **not** mean that you will be eligible to receive the CYB reward.
+ATOM evangelists referral rewards are automatically calculated and have nothing to do with the community pool. 
+
+This table outlines the current breakdown of the 1TCYB allocated to the community pool from the OBEP program. It is not final and if your name is here, it does **not** mean that you will be eligible to receive the CYB reward.
 
 All final decisions for the CYB rewards are done by the coordinator aka @serejandmyself. If you don't see your name here, but think you
 should be eligible for a CYB reward for any reason, please open an issue. 
 
-| Nick | For what | Amount | Address | Comment | Content | Proof | TX |  
-|----------|-------------|------|-------------|------|--------|------|------|
-| deadblackclover | Ru TG chat | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber1pjvkddp4fmx8ym5j7s7su8kn3zuqj255f2369q) | Cyberlink | [Link](t.me/@cyber_russian_community) |
-| deadblackclover | Ru comm site | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber1pjvkddp4fmx8ym5j7s7su8kn3zuqj255f2369q) | Cyberlink, Traffic | [Link](https://cyber.cipherdogs.net/) |
-| Antropocosmist+cyberG | Discord | 2 GCYB | Who? | Cyberlink, Traffic | [Link](https://discord.gg/U5B2Vk) |
-| Antropocosmist+cyberG | Ru BTT | 2 GCYB | Who? | Cyberlink, Traffic | [Link](https://bitcointalk.org/index.php?topic=5246903.0) |
-| Antropocosmist+cyberG | Doc help + translation | 2 GCYB | Who? | Cyberlink, Links | Link? |
-| CyberG | Forum openings | 2 GCYB | Add | Cyberlink all | Links |
-| Primus | Ru Video | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber12reh000lje8y20wshqmgl8tg70qggt2auxnezf)  | Cyberlink | [Link](https://www.youtube.com/watch?v=HOv3onzmFg4&t=1s) |
-| Antropocosmist | TG stickers | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber10zjnfvcz5s5sjtvulnhtxukygnjxx8tnspw9su) | Cyberlink | [Link](https://t.me/addstickers/fuckgoogle) |
-| Antropocosmist | Decent song | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber10zjnfvcz5s5sjtvulnhtxukygnjxx8tnspw9su) | Awating payment | [Link](https://io.cybernode.ai/ipfs/QmUksbsBuM8k2BvTy8tRxNJHSLQ83dMLUUnpJa72neYjFS) | [Proof](https://cyber.page/search/%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F) | 
-| amaraly | WP Jp. | 20 GCYB | Where? | Done | Link? | Payed |
-| chaintee8989 | WP Hindi | 20 GCYB | Where? | Done | Link? | Payed |
-| airx3 | WP Ger. | 20 GCYB | Where? | Done | Link? | Payed |
-| ozidavici | WP Kor. | 20 GCYB | Where? | Done | Link? | Payed |
-| Unbunplease | WP Ru. | 20 GCYB | Where? | Done | Link? | Payed |
-| Ken | WP Filip. | 20 GCYB | Where? | In work | Link? |
-| anobtc | WP Vietn. | 20 GCYB | Where? | Done | Link? | Payed |
-| Thompsona | WP Mand. | 20 GCYB | Where? | Done | Link? | Payed |
-| Taskin | WP Port. | 20 GCYB | Where? | Done | Link? | Payed |
-| kapeldiamond | WP French | 20 GCYB | Where? | In work | Link? |
-| kiwsie | WP Thai | 20 GCYB | Where? | Done | Link? | Payed | 
+| Nick | What | Amount | Address | Comment | TX |  
+|-----|-------|------|----------|------|--------|
+| deadblackclover | [Ru TG chat](t.me/@cyber_russian_community) | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1pjvkddp4fmx8ym5j7s7su8kn3zuqj255f2369q) | Payed | [TX](https://cyber.page/network/euler/tx/07471AFE50ECA15C687A964C131D3BC307C8EBAB6A6325A2C836721FA65CC634) |
+| deadblackclover | [Ru comm. site](https://cyber.cipherdogs.net/) | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1pjvkddp4fmx8ym5j7s7su8kn3zuqj255f2369q) | Payed | [TX](https://cyber.page/network/euler/tx/CF66E154C53F66E1A9782C43B1839C7B5E01B7BE8CA395E016900ECE2C2D4386) |
+| cybermanov | [Cyber video](https://www.youtube.com/watch?v=mTrGJRM6IME) | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1ssu4wqtzvvmwcukcv7l8zxny647mdx03ahc0f0) | Payed | [TX](https://cyber.page/network/euler/tx/3828E02910C1A9B89A10441C1E34360CE0ED927848F03A6B64488197207B401C) |
+| CyberG | [Discord](https://discord.gg/U5B2Vk) | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1a4mzr2y2g0cc9f0uhyeh3ftmsfxzqwxffcckf9) | Payed | [TX](https://cyber.page/network/euler/tx/623A0776BF7EBF8214CB8CB87EF7637FA5D316227FC4833094F38FBFC7D95F09) |
+| CyberG | Forum openings: on Discord | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1a4mzr2y2g0cc9f0uhyeh3ftmsfxzqwxffcckf9) | Payed | [TX](https://cyber.page/network/euler/tx/CDDFA1CD4E9A3A21DAF71CEF4D9922694F3475E4876B013918802B3CCBC3072D) |
+| Antropocosmist | [Ru BTT](https://bitcointalk.org/index.php?topic=5246903) | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1mlqakhlxplhlezk80lph99wcy377j9dkwc42l4) | Payed | [TX](https://cyber.page/network/euler/tx/478920A53158AC4519AEBA0C6410937E7948A3606C128BAF8785AC43DC8A340A |
+| Antropocosmist | [TG stickers](https://t.me/addstickers/fuckgoogle) | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber10zjnfvcz5s5sjtvulnhtxukygnjxx8tnspw9su) | Payed | [TX](https://cyber.page/network/euler/tx/478920A53158AC4519AEBA0C6410937E7948A3606C128BAF8785AC43DC8A340A |
+| Antropocosmist | [Decentalize song](https://cyber.page/search/%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F) | 2 GCYB | [Add](https://cyber.page/network/euler/contract/cyber10zjnfvcz5s5sjtvulnhtxukygnjxx8tnspw9su) | Payed | [TX](https://cyber.page/network/euler/tx/478920A53158AC4519AEBA0C6410937E7948A3606C128BAF8785AC43DC8A340A |
+| Primus | [Ru Video](https://www.youtube.com/watch?v=HOv3onzmFg4&t=1s) | 2 GCYB | [Address](https://cyber.page/network/euler/contract/cyber12reh000lje8y20wshqmgl8tg70qggt2auxnezf)  | Payed | [TX](https://cyber.page/network/euler/tx/721980EE597E174F55068725E59AF768AAADEDC9024DEFAA36C5E2E345EDCA44) |
+| Antropocosmist+cyberG | Doc help + translations | 2 GCYB each | [1]([Address](https://cyber.page/network/euler/contract/cyber1a4mzr2y2g0cc9f0uhyeh3ftmsfxzqwxffcckf9) + [2](https://cyber.page/network/euler/contract/cyber1mlqakhlxplhlezk80lph99wcy377j9dkwc42l4) | Payed | [TX1](https://cyber.page/network/euler/tx/AB954E4E1DF42860C33AAA420F03A857AFCBD5239A9AD72E928841AB6B6B3194) + [TX2](https://cyber.page/network/euler/tx/5DE4392CE7FAC0AACA37B0D103BC5303874E3F3072E63207F3ED54F9C6645415) |
+| amaraly | [WP JP](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_JP.md) | 20 GCYB | [Address](https://cyber.page/network/euler/contract/cyber1d9en5u0cfaucavx848qeq4k6ywqd3z5ds9d9s2) | Payed | [TX](https://cyber.page/network/euler/tx/B1AC232F82E7F5C9FE789A01FEABAF959DB0B13BC9F2D51F8F46596583071E3D) |
+| chaintee8989 | [WP HI](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_HI.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber1d6nkeqxmme3564wd889kr6cjed3asxqzk525ez) | Payed | [TX](https://cyber.page/network/euler/tx/30B472ED87426441EB10A0583032086AD3EC2082651E16B4D88EBBCB966EDF6B) |
+| airx3 | [WP DE](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_DE.md) | 20 GCYB |  Address](https://cyber.page/network/euler/contract/cyber1edwwsevuywe3sx82sustvyx3f3cvjt44cstrle) | Payed | [TX](https://cyber.page/network/euler/tx/FD53988BBFD10F965D8AEA19C741E59F8AD8772A2C7A32032FC58C62FF85295D) |
+| ozidavici | [WP KR](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_KR.md) | 20 GCYB |  Address](https://cyber.page/network/euler/contract/cyber1z8fyzv3mjfccvrxhckr2u3lnc0hrgrlm369js9) | Payed | [TX](https://cyber.page/network/euler/tx/F8695502137FBCF3CC813672C98A9370CA73C90662014D741898D6F61BF0C51C) |
+| Unbunplease | [WP RU](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_RU.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber1teuan269feyw4ax94jfp4pcgrhqnn28gz73uvn) | Payed | [TX](https://cyber.page/network/euler/tx/9D4DDE3D124C4DFD4CC3D1A9141D52A33C0212EB0B262B7B740E89FF6D0603F2) |
+| Ken | [WP FP](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_FP.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber19rtverjn8kw7dzwzch2elktxgcmak6dlyyma7n) | Payed | [TX](https://cyber.page/network/euler/tx/EFBF700919A4637DB9CDA6FD8BB38A0D6F728E0CC75781E8398583EB0C753F5D) |
+| anobtc | [WP VN](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_VN.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber17ud38eyfkd800kvw3c9kl3zpvgvj296ndg3zg7) | Payed | [TX](https://cyber.page/network/euler/tx/51D217B876346F962CA40FD3DD61C6726101C35AF86D60A5CEF1BE90DDEEE806) |
+| Thompsona | [WP CN](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_CN.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber1gcy4f6f2sc73aegd9r68rt2q6teekl6s22lxxu) | Payed | [TX](https://cyber.page/network/euler/tx/C26387F2E6B44A10C947676B22CAEF3FCE293FCA7CAE306DBFC43B398DE4FF6E) |
+| Taskin | [WP PT](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_PT.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber1djdfq5mn3dzm9whpznczxz77s8ep2qgguva03w) | Payed | [TX](https://cyber.page/network/euler/tx/68DE1515063F8ADF98649741B17B5FC74006AE69A46A1F676FE4A247EA7C5AB6) |
+| kiwsie | [WP TH](https://github.com/serejandmyself/cyber/blob/master/translations/cyber_TH.md) | 20 GCYB | Address](https://cyber.page/network/euler/contract/cyber1tcnlvf6qhlc3x7ax2vk3vzhxhf8wy8xrh2v9as) | Payed | [TX](https://cyber.page/network/euler/tx/017054C1FEC1E8267FCAB404B6A4E57DE94785BE81C687BE879E2FB8E49812AE) |
+
+
 
