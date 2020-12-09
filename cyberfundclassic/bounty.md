@@ -45,12 +45,15 @@ Behind the scenes: When Bob opens cyber.page, keplr and inputs the link and clic
 
 ```bash
 cid("bounty_noob") -> cid(task.json)
+```
 
 where task.json is
 
-json
+```json
 {
-   "level": "noob",
+   "round": "0",
+   "submitting_timestamp": "2020-20-20:00:00:00",
+   "level": "0",
    "address": "cyberaddress",
    "task_link": "https://tasklink.xyz"
 }
