@@ -1,6 +1,6 @@
 # Bounty
 
-@serejandmyself @SaveTheAles
+@serejandmyself @savetheales
 
 ## Intro & Motivation
 We propose to create an ongoing, gamified bounty process for an everlasting distribution of tokens (as long as the network agrees to do so) to those who create value for the network on its various stages of existence.
