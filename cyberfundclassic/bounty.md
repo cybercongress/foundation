@@ -94,3 +94,88 @@ We understand the difficulty in creating such a proposition, as it requires atte
 ## Reward
 In the future such initiatives can be supported by cyberFund~Classic, alas, it doesn't exist as yet. Hence, we propose to support this by using the community pool.
 
+## Design.
+
+> TODO. Definition of done. Automatically. Limited tokens. Limited submissions. Limited time. The intersection of two.
+
+### Noob bounty, phase 0, MVP. Subjective judgment by community advocate
+
+Let start from the moment when Bob gets his account in `cyber` network and puts it in the pocket. He prepared `web2` link for submitting (aka completed task) and want to submit a task for judgment. The workflow should be:
+
+![noob_bounty_wf](./bounty_img/noob_bounty_wf.jpg)
+
+where task.json is
+
+```json
+{
+   "round_id": "<round_id>",                          // changeable round number according to the bounty program iteration
+   "submitting_timestamp": "<submitting_timestamp>",  // get_time method on client side
+   "level_id_": "<level_id>",                         // means noob if "0". For future development
+   "address": "<cyberaddress>",                       // user's cyberaddress from the pocket
+   "task_link": "<task_link>"                         // web2 link with completed task
+}
+```
+
+Requirements for *cyber.page* on the current stage:
+
+- page-form with intro
+- task.json generate method
+- additional endpoint for POST method
+- the set of error messages
+- congratulation message.
+
+Requirements for *cyber.bot* on the current stage:
+
+- Validation methods
+- Lite SQL for <task_link> validation
+- Signing and broadcasting methods
+- Response standard
+
+After the submission, Bob can go to the `bounty board` page for checking the status of the submission. The submission can be in `Review`, `Accepted and paid`, or in `Denied` statuses:
+
+![bounty_board](./bounty_img/bounty_board.jpg)
+
+Tasks on a `Review` can get from simple LCD query, filter by `subject` (address of cyber.bot account) and `objectFrom` (cid("bounty_noob")). For separating rounds and task levels according to query mechanics we can extend the keyword "bounty_noob" to desirable in future implementation. To avoid spam in reviewed it also possible to use `minheight` and `maxheight` filters. Height possible get by timestamp from the `cyberindex`.
+
+The `resolved cid` snippet in the `Review` section:
+
+![review_snippet](./bounty_img/review_snippet.jpg)
+
+All buttons muted except the state then the judge's address active in the pocket. A judge can research the completed task and make the decision to approve or deny the task. If a judge clicks the approve button cyber.page should generate a transaction with two messages: 
+
+```json
+{
+   "msg": [
+      {
+         "type": "cosmos-sdk/MsgSend",                // send msg with rewards
+         "value": {
+            "from_address": "<judge's_address>",
+            "to_address": "<Bob's_address>",
+            "amount": [
+               {
+                  "denom": "eul",
+                  "amount": "<amount>"
+               }
+            ]
+         }
+      },
+      {
+         "type": "cyber/Link",                     // link msg to write decision to blockchain
+         "value": {
+            "address": "<judge's_address>",
+            "links": [
+               {
+                  "from": "cid(task.json)",
+                  "to": "cid(approve)/cid(deny)"   // cid("approve") or cid("deny") accordingly to judge's decision
+               }
+            ]
+         }
+      }
+   ]
+}
+   
+```
+
+Thus it possible to get CID from `Accepted and paid` and 'Denied' sections by simple LCD queries with filters `subject` = <judge's_address> and 'objectTo' = cid("decision").
+
+That's design implies frequently judge's participation to avoid tasks accumulation. And a lot of mechanics with every task linking. Probably it would be nice to accumulate all decisions of judges and generate one transaction per session. In the next phases, task judgment should be from the community by voting. 
