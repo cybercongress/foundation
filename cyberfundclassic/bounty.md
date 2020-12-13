@@ -49,7 +49,7 @@ cid("bounty_noob") -> cid(task.json)
 
 where task.json is
 
-```json
+```
 {
    "round": "0",
    "submitting_timestamp": "2020-20-20:00:00:00",
@@ -106,7 +106,7 @@ Let start from the moment when Bob gets his account in `cyber` network and puts 
 
 where task.json is
 
-```json
+```
 {
    "round_id": "<round_id>",                          // changeable round number according to the bounty program iteration
    "submitting_timestamp": "<submitting_timestamp>",  // get_time method on client side
@@ -143,7 +143,7 @@ The `resolved cid` snippet in the `Review` section:
 
 All buttons muted except the state then the judge's address active in the pocket. A judge can research the completed task and make the decision to approve or deny the task. If a judge clicks the approve button cyber.page should generate a transaction with two messages: 
 
-```json
+```
 {
    "msg": [
       {
