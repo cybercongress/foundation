@@ -2,6 +2,15 @@
 
 @serejandmyself @savetheales
 
+## Content
+- [Intro & Motivation](#intro--motivation)
+- [Vision](#vision)
+- [Implementing stage 1](#implementing-stage-1)
+   - [Noob bounty, phase 0, MVP. Subjective judgment by a community advocate](#noob-bounty-phase-0-mvp-subjective-judgment-by-a-community-advocate)
+   - [Economics of phase 0](#economics-of-phase-0)
+- [Roadmap](#roadmap)
+- [Reward](#reward)
+
 ## Intro & Motivation
 We propose to create an ongoing, gamified bounty process for an everlasting distribution of tokens (as long as the network agrees to do so) to those who create value for the network at its various stages of existence.
 
