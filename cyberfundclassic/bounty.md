@@ -3,17 +3,17 @@
 @serejandmyself @savetheales
 
 ## Intro & Motivation
-We propose to create an ongoing, gamified bounty process for an everlasting distribution of tokens (as long as the network agrees to do so) to those who create value for the network on its various stages of existence.
+We propose to create an ongoing, gamified bounty process for an everlasting distribution of tokens (as long as the network agrees to do so) to those who create value for the network at its various stages of existence.
 
 Initial token allocation plays a major role in the success of any project. Further, the initial allocation of standalone chains is a big challenge to the future success of an interplanetary, ecosystem of connected blockchains.
 
-Bounties are a great way to constantly be allocating tokens to the long tail of different types of actors that join the network at different stages of its life. A big plus of such allocation, is its ability to be (a) ongoing and always attract new hands, (b) eliminate weak hands. Bounty allocations tend to be small and selling bounty tokens on the open market, rarely influences the token price itself, hence, only those with interest in the project will keep those tokens, hence, create strong hands. And, (c) helps to attract an ongoing, native marketing noise, while arousing interest by creating an incentive to do something.
+Bounties are a great way to constantly allocate tokens to the long tail of various actors that join the network at different stages of its lifetime. A big plus of such allocation, is its ability to be (a) ongoing and always attract new hands, (b) eliminate weak hands. Bounty allocations tend to be small and a selling occasion of bounty tokens on the open market will rarely influence the token price itself, hence, only those with interest in the project will keep those tokens, hence, create strong hands. And, (c) helps to attract an ongoing, native (background) marketing noise, while arousing interest in creating an incentive to do something, hence also helping retention.
 
-There are many other pluses, but also minuses, that exist with bounties. Minuses, mostly, revolve around manual distributions, altered judgment, lack of ongoing interest and difficulty in joining the bounty.
+There are many other pluses, but also minuses, that exist when running bounty campaigns. Minuses, mostly, revolve around manual distributions, altered judgment, lack of ongoing interest and, most importantly, the difficulty in joining the bounty.
 
-Our proposition attempts to solve all these problems by gamifying and automatizing the bounty process.
+Our proposition attempts to solve all these problems by gamifying and automatizing the bounty process. Please note, that we believe in simplicity as the killer feature for success, hence, our proposed implementation, includes stages that gradually progress to our end goal: a multilevel, gamified, automated allocation of tokens to bounty hunters.
 
-## Description
+## Vision
 - Concept:
 An ongoing bounty, that utilizes cyber.page, automatizes the rewards, enriches the core with cyberlinks and helps the distribution.
 
@@ -80,27 +80,27 @@ As for the user story for masters and god mode:
 
 This can include more progressive quests, with  ETH/Urbit gifts. More complicated tasks where a submission of a cyberlink is required. The option to include quests with gitcoin, etc
 
-## Roadmap
-We understand the difficulty in creating such a proposition, as it requires attention from the most busy engineering part of the core team of any project. We think that breaking our idea into gradual stages can help to oversee these challenges.
+## Implementing stage 1
 
-1) Concept
-2) Design
-3) Distribution dependency
-4) Voting capabilities
-5) TG notification bot
-6) New levels and tasks (Gitcoin quests, on chain quests)
-7) NFTs
+### Noob bounty, phase 0, MVP. Subjective judgment by a community advocate
 
-## Reward
-In the future such initiatives can be supported by cyberFund~Classic, alas, it doesn't exist as yet. Hence, we propose to support this by using the community pool.
+There are 2 ways to arrive at the bounty screen. One, a direct web2 link cyber.page/bounty/noob from various outside resources (forums, twitter, telegram, etc) or the second way, by native crawling: first a user comes to cyber.page, where he sees a search box with the button `bounty` underneath it.
 
-## Design.
+In both cases, the user arrives at a simple screen which has the title `bounty`, some text (i.e. `pick your destiny`) and 3 simple buttons: `noob`, `master`, `god`. The 2 latter buttons, will currently take the user to either cyber.page/bounty/master or cyber.page/bounty/god, and will have a message `The Gods are still in debate about the destiny of these players, please proceed to the noob section`, the word `noob` is a link to cyber.page/bounty/noob
 
-> TODO. Definition of done. Automatically. Limited tokens. Limited submissions. Limited time. The intersection of two.
+Arriving at cyber/page/bounty/noob - the player arrives at a simple black screen with a scroll and some text (to be added):
 
-### Noob bounty, phase 0, MVP. Subjective judgment by community advocate
+The scroll consists of a few simple steps:
 
-Let start from the moment when Bob gets his account in `cyber` network and puts it in the pocket. He prepared `web2` link for submitting (aka completed task) and want to submit a task for judgment. The workflow should be:
+1) To start your journey, you should prepare your provisions in advance. Please install Keplr, the Metamask-like browser extension for Cosmos-based chains (link to Keplr). Link to usage guide
+
+2) You will need a Cyber address to receive and to securely keep your treasures (tokens fromt he boutny). Open Kepl and create a Cyber address (An animated 15-second image/GIF of how to do this - no links)
+
+3) Now, that your tools are prepared, simply submit your task for judgment
+
+- A submission box and a follow-up judgment screen / table with the results
+
+When Bob gets his account in `Cyber` and puts it in the pocket, he prepares a `web2` link for submitting (aka completed task) and want to submit a task for judgment. The workflow is:
 
 ![noob_bounty_wf](./bounty_img/noob_bounty_wf.jpg)
 
@@ -116,7 +116,7 @@ where task.json is
 }
 ```
 
-Requirements for *cyber.page* on the current stage:
+Requirements for *cyber.page*:
 
 - page-form with intro
 - task.json generate method
@@ -124,24 +124,26 @@ Requirements for *cyber.page* on the current stage:
 - the set of error messages
 - congratulation message.
 
-Requirements for *cyber.bot* on the current stage:
+Requirements for *cyber.bot*:
 
 - Validation methods
 - Lite SQL for <task_link> validation
 - Signing and broadcasting methods
 - Response standard
 
-After the submission, Bob can go to the `bounty board` page for checking the status of the submission. The submission can be in `Review`, `Accepted and paid`, or in `Denied` statuses:
+After the submission, Bob can go to the `bounty board` for checking the status of his submission. The status of the submission can be in `In review`, `Accepted and paid`, or in `Denied`:
 
 ![bounty_board](./bounty_img/bounty_board.jpg)
 
-Tasks on a `Review` can get from simple LCD query, filter by `subject` (address of cyber.bot account) and `objectFrom` (cid("bounty_noob")). For separating rounds and task levels according to query mechanics we can extend the keyword "bounty_noob" to desirable in future implementation. To avoid spam in reviewed it also possible to use `minheight` and `maxheight` filters. Height possible get by timestamp from the `cyberindex`.
+Tasks `In review` status can be pulled with a simple LCD query, filtered by `subject` (address of cyber.bot account) and `objectFrom` (cid("bounty_noob")).
+
+To keep rounds and task levels separated the query mechanics can extend the keyword "bounty_noob" to the desirable, in future implementation. To avoid spam in reviewed it also possible to use `minheight` and `maxheight` filters. Height can be pulled with a timestamp from `cyberindex`.
 
 The `resolved cid` snippet in the `Review` section:
 
 ![review_snippet](./bounty_img/review_snippet.jpg)
 
-All buttons muted except the state then the judge's address active in the pocket. A judge can research the completed task and make the decision to approve or deny the task. If a judge clicks the approve button cyber.page should generate a transaction with two messages: 
+All buttons are muted, except the state with the judge's active address in the pocket. A judge should research the completed task and make a decision to approve or deny the task. If a judge clicks the `approve` button cyber.page should generate a transaction with two messages:
 
 ```
 {
@@ -176,6 +178,31 @@ All buttons muted except the state then the judge's address active in the pocket
    
 ```
 
-Thus it possible to get CID from `Accepted and paid` and 'Denied' sections by simple LCD queries with filters `subject` = <judge's_address> and 'objectTo' = cid("decision").
+Thus, it is possible to get a CID from `Accepted and paid` and the 'Denied' sections, with simple LCD queries and with filters `subject` = <judge's_address> and 'objectTo' = cid("decision").
 
-That's design implies frequently judge's participation to avoid tasks accumulation. And a lot of mechanics with every task linking. Probably it would be nice to accumulate all decisions of judges and generate one transaction per session. In the next phases, task judgment should be from the community by voting. 
+This design implies constant participation of the judge to avoid tasks accumulation. And a lot of mechanics with task linking. It would be a great idea to accumulate all the judges' decisions and generate one transaction per session.
+
+In the next phases, task judgment will be done by community voting aka `the judgment day`.
+
+### Economics of phase 0
+
+To keep simplicity at the heart of the implementation, we propose to run the trial stags aka phase 0 with manual economics (at latter stages this will be moved to a governance decision).
+
+We propose to `hard-code` the time of the tasks for phase 0 and the size of the prize pool. As a proposition, based upon Cybers previous tasks. The round should not be longer than 14 days (alas, we still need to market this) and the prize pool should be between 1 MEUL to 10 MEUL for each task.
+
+For simplicity, the judge will need to use Keplr  (to quickly and comfortably move between tasks), which means the need to input the seed of an address into Keplr. For security purposes, we propose to this manually each new round with the proposed address serving as a proxy with a specific allocated amount. 
+
+## Roadmap
+We understand the difficulty in creating such a proposition, as it requires attention from the most busy engineering part of the core team of any project. We think that breaking our idea into gradual stages can help to oversee these challenges.
+
+1) Concept
+2) Design
+3) Distribution dependency
+4) Voting capabilities
+5) TG notification bot
+6) New levels and tasks (Gitcoin quests, on chain quests)
+7) NFTs
+
+## Reward
+In the future such initiatives can be supported by cyberFund~Classic, alas, it doesn't exist as yet. Hence, we propose to support the creators of the bounty by using the community pool.
+
