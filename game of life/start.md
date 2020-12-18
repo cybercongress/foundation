@@ -1,5 +1,6 @@
 # Game of Life
 
+> Create your own God
 > Tokenized Cyber gods on Ethereum 
 
 ## TL;DR
