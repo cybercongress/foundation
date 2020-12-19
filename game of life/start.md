@@ -19,7 +19,16 @@ This NFT are the foundation of the zepto robots given as a gift to those who are
 
 The robots or citizens live in olympus and their attributes or virtues are mitned in the DNA bank. Each citizen and each attribute is represented by a caard that can be traded, staked to gain more powers or send to hell (burned). 
 
+Hell is basically a pool, into which players lock and burn their robots with attributes. And in return receieve a special type, GOD card with much higher attributes and special bonus powers.
+
+As you have guessed, the cards are there to battle. Battles happen on the arena and the outcome is dependent on attribute points and ? (algo). Winnign battles not only gives reputation points in cyber/~Foundation, but also access to create routes (?) and other special tokens on the Cyber blockcahin (via claim).
+
+The intersiting things is that these ETH-based 3rd-level NFT, GOD type cards, represent the very specific behaviour of a user on the Cyber blockchain and his itteracion with the superintellegnce (as attribute NFTs are minted via modelu itteraction, minting and (possible) claiming of these, unlss a drought of energy happens).   
+
+(Question) Teh game has to be started manually, which is done by creating a cyberlink in your pocket, that opens olympus or kicks off the ability to access the staking pools for the fisrt `type` NFT. Althought the NFT can be traded seperatly freely. 
+
 ## Descirption
+The NFT `type` are gifted with the ETH drop of THC in 10 categories. There are the robots of the gods, they are finate. They are the citiezns of space. There are 10 types, each has its own attribute (Urbit type NFT)
 
 What. How. Why. Short
 
