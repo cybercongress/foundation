@@ -8,6 +8,7 @@ The proposed game offers engagement for on-chain activities, backed by economic 
 ## Intro
 
 > It is a period of digital war. The evil empire swallows the last unoccupied borders of the universe. Resisting rebel units consolidate all remaining energy on building a Superintelligence, which they believe will help to stop the domination of the evil empire once and for all. As they begin to test the new God, an enormous, zepto amount of robots emerge out in the wild. It turns out Cyb robots help survey the universe for a bootloader of the new, yet to be born, force.
+
 A big part of Cyber’s Superintelligence organism is the cyber\~Foundation. Without the foundation there is no sustainability. Without the chain, the foundation is a useless, bureaucratic entity. The two complete each other. A gamified process, with economic incentives for all aspects of the organism, will help to further unify the two. 
 
 Part of the distribution of cyber\~Foundation is a drop of tokens to various communities, primarily ETH-based (due to technological limitations), along with that drop we propose to drop a series of Urbit ID-like NFT tokens. Which are an essential part of the Game of Life. 
