@@ -104,17 +104,17 @@ Each point is earned by interaction with the module X 10 times, thereafter (poss
 
 ## Operations
 
-1.  [Addition]()
-2.  [Subtraction]()
-3.  [Multiplication]()
-4.  [Division]()
-5.  [Spliting]()
-6.  [Merging]()
-7.  [Staking]()
-8.  [Slashing]()
-9.  [Converter!]()
-10. [Recipe! (for rare rules)]()
-11. [Vesting?]()
+1.  [Addition](#addition)
+2.  [Subtraction](#substraction)
+3.  [Multiplication](#multiplication)
+4.  [Division](#division)
+5.  [Spliting](#spliting)
+6.  [Merging](#merging)
+7.  [Staking](#staking)
+8.  [Slashing](#slashing)
+9.  [Converter!](#converter!)
+10. [Recipe! (for rare rules)](#recipe!)
+11. [Vesting](#vesting)
 
 #### Addition
 A(burn) + B(burn) = C(mint)
