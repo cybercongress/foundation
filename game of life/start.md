@@ -104,69 +104,69 @@ Each point is earned by interaction with the module X 10 times, thereafter (poss
 
 ## Operations
 
-1.  Addition
-2.  Subtraction
-3.  Multiplication
-4.  Division
-5.  Spliting
-6.  Merging
-7.  Staking
-8.  Slashing
-9.  Converter!
-10.  Recipe! (for rare rules)
-11. Vesting?
+1.  [Addition]()
+2.  [Subtraction]()
+3.  [Multiplication]()
+4.  [Division]()
+5.  [Spliting]()
+6.  [Merging]()
+7.  [Staking]()
+8.  [Slashing]()
+9.  [Converter!]()
+10. [Recipe! (for rare rules)]()
+11. [Vesting?]()
 
-1. Addition
+#### Addition
 A(burn) + B(burn) = C(mint)
 Example rules: 
 1 Robot + 1 Ship = 1 Space Robot
 20 Robot Parts + 1 Robot = 1 Better Robot
 2 Crafts + 5 Bonus = 1 Robot Part
 
-2. Substraction
+#### Substraction
 A(burn) - B(nothing) = C(mint)
 Example rules: 
 1 Robot - 10 Robot Parts = 1 Robot Soul
 
-3. Multiplication
+#### Multiplication
 A(burn) * B(burn)= C(mint)
 Example rules: 
 1 Robot * 1 Full Moon = 2 Robots
 
-4. Division
+#### Division
 A(burn) / B(burn)= C(mint)
 Example rules: 
 1 Robot / 1 Tool box = 30 Robot Parts
 
-6. Spliting
+#### Spliting
 A(burn) / N = C(mint)
 Example rules: 
 1 Robot / 20 = 20 Robot Parts
 
-7. Merging
+#### Merging
 A(burn) * N = C(mint)
 Example rules: 
 20 Robot Parts = 1 Robot
 
-8. Staking
+#### Staking
 A(stake) -> B(mint, non-fungible) 
 A(stake) -> B(mint, fungible)
 
-9. Slashing
+#### Slashing
 A(staked) -> 0
 Example Rule:
 Event E (bad behavior) -> A(burn)
 
-10. Converter! (FT<->NFT)
+#### Converter! (FT<->NFT)
 20A(fungible, lock on contract) -> B(mint)
 Example Rule:
 100 GCYB -> 1 Big Balls
 
-11. Recipe (create NFT rules/recipes)
+#### Recipe! (create NFT rules/recipes)
 Example Rule:
 Recipe(1 Robot + 1 Ship = 1 Space Robot) -> R(mint)
 
-Recipes (rules) are defined by the contracts. A rule aka a recipe, can be issued in the form of a token, which can be burned after usage.
+*Recipes (rules) are defined by the contracts. A rule aka a recipe, can be issued in the form of a token, which can be burned after usage.*
 
 ## Motivation
 
